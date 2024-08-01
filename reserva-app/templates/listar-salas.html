@@ -64,25 +64,24 @@
               </tr>
             </thead>
             <tbody>
-              <!-- Aqui você pode colocar um loop para exibir as salas dinamicamente -->
-              <tr>
-                <td>1</td>
-                <td>Laboratório</td>
-                <td>PCs com intel i5, 8GB de RAM</td>
-                <td>20</td>
-                <td>Sim</td>
-                <td>
-                  <form action="">
-                    <button class="btn btn-sm btn-dark" type="submit" formaction="/templates/cadastrar-sala.html">Editar</button>
-                    <button class="btn btn-sm btn-dark" type="submit" formaction="/templates/reservas.html">Desativar</button>
-                    <button class="btn btn-sm btn-dark" type="submit" formaction="/templates/reservas.html">Excluir</button>
-                  </form>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        
+              {% for sala in salas %}
+                <tr>
+                  <td>{{ sala.id }}</td>
+                  <td>{{ sala.tipo }}</td>
+                  <td>{{ sala.descricao }}</td>
+                  <td>{{ sala.capacidade }}</td>
+                  <td>{{ sala.ativa }}</td>
+                  <td>
+                    <form action="">
+                      <button class="btn btn-sm btn-dark" type="submit" formaction="/templates/cadastrar-sala.html">Editar</button>
+                      <button class="btn btn-sm btn-dark" type="submit" formaction="/templates/reservas.html">Desativar</button>
+                      <button class="btn btn-sm btn-dark" type="submit" formaction="/templates/reservas.html">Excluir</button>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
       </div>
     </div>
   </div>
