@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Conectar ao banco de dados
 def conectar_bd():
-    return conexao_abrir("localhost", "root", "", "reservas")
+    return conexao_abrir("localhost", "root", "aluno", "reservas_db")
 
 @app.route("/")
 def home(): 

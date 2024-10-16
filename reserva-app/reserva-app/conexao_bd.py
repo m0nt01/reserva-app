@@ -3,7 +3,7 @@ import mysql.connector
 def conexao_abrir(host, user, password, database):
     return mysql.connector.connect(
         host= "localhost",
-        user= "Malieni",
+        user= "root",
         password= "aluno",
         database= "reservas_db"
     )
