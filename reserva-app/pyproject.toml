@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "reserva-app"
+name = "ratao"
 version = "0.1.0"
 description = ""
-authors = ["Malieni <gui.souza.malieni@gmail.com>"]
+authors = ["Rafael Monteiro Azevedo"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+flask = "^3.0.3"
 
 
 [build-system]
